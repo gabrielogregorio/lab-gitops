@@ -8,4 +8,4 @@ resources:
 images:
 - name: my-needs-replace-server
   newName: gabrielogregorio/gitops
-  newTag: 842708960233067bbcb96479630bfe06918a52db
+  newTag: 529a01c3bf2e67be938175a3d6f78c8d1a7991f3
