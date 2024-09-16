@@ -1,0 +1,1 @@
+deploy e service do kubernets

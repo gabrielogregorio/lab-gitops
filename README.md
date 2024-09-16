@@ -6,3 +6,14 @@ docker login
 
 
 sudo docker push gabrielogregorio/gitops:latest
+
+
+https://kind.sigs.k8s.io/docs/user/quick-start#installing-from-release-binaries
+
+
+kind create cluster --name=gitops
+
+-> sudo kubectl cluster-info --context kind-gitops
+
+----------
+

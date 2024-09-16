@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-needs-replace-server
+spec:
+  selector:
+    matchLabels:
+      app: my-needs-replace-server
+  template:
+    metadata:
+      labels:
+        app: my-needs-replace-server
+    spec:
+      containers:
+      - name: my-needs-replace-server
+        image: my-needs-replace-server
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3333
