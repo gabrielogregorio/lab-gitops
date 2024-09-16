@@ -28,3 +28,49 @@ kubectl get deploy
 
 
 kubectl get svc
+
+=========
+
+install argo
+
+https://argo-cd.readthedocs.io/en/stable/
+
+sudo kubectl create namespace argocd
+sudo kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+
+=======
+
+sudo kubectl get all -n argocd
+
+
+========
+
+sudo kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+
+
+https://argo-cd.readthedocs.io/en/stable/cli_installation/
+
+
+https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+
+obter senha com login admin => sudo argocd admin initial-password -n argocd
+
+
+
+no argo:
+new app
+project name : default
+aplication service: projeto-gitops
+sync policy: se for manual, o argo avisa, automatico, ele muda sozinho. Vamos deixar manual
+
+===
+
+source: repo git.
+pasta k8s
+destination: cluster default
+namespace: default
+
+ele precebe que estamos usnado o customize

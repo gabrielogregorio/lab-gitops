@@ -42,5 +42,7 @@ jobs:
     - name: Push
       uses: ad-m/github-push-action@master
       with: 
-        github_token: ${{ secrets.GITHUB_TOKEN }}  
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        ## Para evitar de poluir as branchs
+        ## Você pode ter um repo de manifestos e esse repo receber os commits  
         repository: gabrielogregorio/lab-gitops
