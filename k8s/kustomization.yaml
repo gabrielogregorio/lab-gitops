@@ -2,10 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
-images: 
-  - name: my-needs-replace-server
-    newName: gabrielogregorio/gitops
-    newTag: cd-auto-update-this-tag
+images:
+- name: my-needs-replace-server
+  newName: gabrielogregorio/gitops
+  newTag: 842708960233067bbcb96479630bfe06918a52db
