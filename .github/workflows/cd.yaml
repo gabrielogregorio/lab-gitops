@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2 # pull code
+      uses: actions/checkout@v2 # pull code from branch
 
     - name: build and push to dockerhub
       uses: docker/build-push-action@v1.1.0

@@ -13,5 +13,7 @@ RUN chmod -R 777 /app
 
 USER appuser
 
+# tentar usar a imagem scratch
+COPY ./src ./src
 
-ENTRYPOINT ["yarn", "dev"]
+ENTRYPOINT ["yarn", "start"]
