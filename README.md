@@ -17,3 +17,14 @@ kind create cluster --name=gitops
 
 ----------
 
+aplicar os arquivos no kubernet local
+
+kubectl apply -f k8s/
+
+
+ver
+
+kubectl get deploy
+
+
+kubectl get svc
